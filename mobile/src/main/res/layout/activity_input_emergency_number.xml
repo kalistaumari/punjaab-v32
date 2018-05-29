@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andinazn.sensordetectionv2.InputEmergencyNumber">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white">
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="*Enter Phone Num (req.)"
+        android:inputType="phone"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/inputPhone3"
+        android:layout_alignStart="@+id/inputPhone2"
+        android:layout_marginBottom="53dp" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Required 1 family member, can be up to 5 family members"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your family members' phone number: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_above="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/inputPhone2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/inputPhone3"
+        android:layout_alignStart="@+id/inputPhone3" />
+
+    <EditText
+        android:id="@+id/inputPhone3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/inputPhone4"
+        android:layout_alignStart="@+id/inputPhone4" />
+
+    <EditText
+        android:id="@+id/inputPhone4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/inputPhone5"
+        android:layout_alignStart="@+id/inputPhone5" />
+
+    <EditText
+        android:id="@+id/inputPhone5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:padding="17dp"
+        android:textSize="18sp"
+        android:layout_above="@+id/buttonNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/button_shape"
+        android:onClick="goToNameActivity"
+        android:text="NEXT"
+
+
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
